@@ -1,0 +1,33 @@
+{
+  "name": "react-auth0",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@openid/appauth": "^1.2.1",
+    "auth0-js": "^9.10.0",
+    "content-security-policy": "^0.3.3",
+    "dotenv": "^6.2.0",
+    "jwt-decode": "^2.2.0",
+    "pkce-challenge": "^1.0.2",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-meta-tags": "^0.7.4",
+    "react-scripts": "2.1.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "https://expressapi-av.herokuapp.com/",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
