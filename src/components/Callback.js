@@ -9,6 +9,7 @@ export default class Callback extends Component {
   render() {
     return (
       <div>
+      {/*Deze pagina wordt getoond nadat een gebruiker is ingelogd */}
         Loading...
       </div>
     )

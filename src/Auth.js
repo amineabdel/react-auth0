@@ -19,9 +19,9 @@ export default class Auth {
         redirectUri: 'https://react-auth0.netlify.com/callback',
         audience: 'https://expressapi-av.herokuapp.com/apiData',
         responseType: 'token id_token',
-        scope: 'openid profile read:expressapi-av',
-        code_challenge_method: '',
-        code_challenge: '',
+        /*Als je inlogt, vraagt auth0 toestemming voor je profiel en voor de API Data (zie scope).
+        Werkt maar één keer, tijdens het opnieuw loggen heb je al toestemming gegeven, Dus wordt dat scherm niet meer getoond.*/
+        scope: 'openid profile expressapi.read',
     });
     constructor() {
         this.login = this.login.bind(this);

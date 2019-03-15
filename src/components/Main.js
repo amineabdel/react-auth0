@@ -14,11 +14,14 @@ export default class Main extends Component {
                 <p>
                     React page with Integrated Auth0!
                     </p>
+                    
+                {/* star wars referentie :D */ }
                 <p>hello there: {this.props.general}, do you want to see the secret area <a href="/secret">klik dan hier.</a></p>
                 <div>
 
                 </div>
 
+                {/* Als je ingelogd bent, hoef je niet meer de 'continue with google' button zien*/ }
                 {!this.props.auth.isAuthenticated() &&
 
                     <div className="google-btn"  >
@@ -29,12 +32,14 @@ export default class Main extends Component {
                     </div>
                 }
 
+                
+                {/* enable using allow-same-origin en enable using allow-scripts mogen nooit allebei gebruikt worden */ }
                 <iframe id="iframeinput" title="online" src='https://www.editpad.org/'
-                    sandbox="allow-same-origin allow-scripts"
+                    sandbox="allow-same-origin"
                     width="300" height="200">
                 </iframe>
 
-                <iframe title="maps" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+                <iframe title="maps" sandbox="allow-scripts allow-popups allow-forms"
                     src={url}
                     width="300" height="200" allowFullScreen>
                 </iframe>
